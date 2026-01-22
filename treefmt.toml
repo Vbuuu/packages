@@ -1,0 +1,6 @@
+[global]
+excludes = ["result/**"]
+
+[formatter.nix]
+command = "nixfmt"
+includes = [ "*.nix" ]
