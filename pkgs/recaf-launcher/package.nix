@@ -33,7 +33,6 @@ let
         gtk3
         pango
         xorg.libXtst
-        xorg.libX11
         xorg_sys_opengl
       ];
 
@@ -53,6 +52,7 @@ let
     name = "Recaf Launcher";
     desktopName = name;
     exec = "${recaf}/bin/${pname}";
+    terminal = false;
   };
 
 in
