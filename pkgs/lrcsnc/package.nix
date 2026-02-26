@@ -6,16 +6,16 @@
 }:
 buildGoModule rec {
   pname = "lrcsnc";
-  version = "0.1.2";
+  version = "0.1.3-1";
 
   src = fetchFromGitHub {
     owner = "Endg4meZer0";
     repo = "lrcsnc";
-    tag = version;
-    sha256 = "sha256-aB0au6ab028vo6bmkWC4URiaUZ8MRyDDM9BqejwzFEk=";
+    tag = "v${version}";
+    sha256 = "sha256-/lDOWxPl9Z6LellbbuGMNMhiqQfulKmogQ/KnlGus3g=";
   };
 
-  vendorHash = "sha256-ww+SXy29woGlb120sj1oGb4MIQJzpBCKGpUKYsYxTMk=";
+  vendorHash = "sha256-33BiLjmMcPAyd0SEGA24MnaW74L764bcU1A6s1pl3+8=";
 
   doCheck = false;
 
