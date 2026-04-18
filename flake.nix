@@ -21,7 +21,7 @@
         packages = import ./. { inherit pkgs; };
 
         devShells.default = pkgs.mkShell {
-          name = "devshell";
+          name = "packages";
 
           packages = with pkgs; [
             treefmt
