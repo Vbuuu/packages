@@ -30,7 +30,7 @@ stdenvNoCC.mkDerivation {
   buildPhase = ''
     cbmp -d 'svg/modern' -o 'bitmaps/Bibata-Custom' -bc '${backgroundColor}' -oc '${outlineColor}'
 
-    ctgen configs/right/x.build.toml -p x11 -d 'bitmaps/Bibata-Custom' -n 'Bibata-Custom' -c 'Custom Cursor'
+    ctgen configs/normal/x.build.toml -p x11 -d 'bitmaps/Bibata-Custom' -n 'Bibata-Custom' -c 'Custom Cursor'
   '';
 
   installPhase = ''
