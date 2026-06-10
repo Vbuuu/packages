@@ -6,13 +6,13 @@
 }:
 rustPlatform.buildRustPackage rec {
   pname = "nu_plugin_parquet";
-  version = "0.108.0";
+  version = "0.112.2";
 
   src = fetchFromGitHub {
     owner = "fdncred";
     repo = "nu_plugin_parquet";
-    rev = "v0.18.0";
-    sha256 = "sha256-2DLQzXV9i0zw9O7elixCRvQog2NVMF1ovpsc+OioOrA=";
+    rev = "v0.22.0";
+    sha256 = "sha256-TFzYa4jMy664rW+FRKYAcKo+niJg0IcEEyinGrpXbBg=";
   };
 
   cargoLock = {
