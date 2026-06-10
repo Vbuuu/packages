@@ -1,12 +1,14 @@
 #!/usr/bin/env nu
 
-def main [] {
+def main [--impure] {
   let systems = ["x86_64-linux", "aarch64-linux"]
-  let flake = (nix flake show --json --all-systems | from json | get packages)
+  let packages = (nix flake show --json --all-systems | from json | get packages)
+
   let targets = ($systems | each { |sys|
-    let pkgs = ($flake | get $sys | columns)
-    $pkgs | each { $sys + "." + $in } | each { ".#packages." + $in }
+    $packages | get -o $sys | default {} | columns | each { $"#packages.($sys).($in)" }
   } | flatten)
 
-  nix build --no-link --print-out-paths ...$targets | cachix push vbuuu
+  let nix_args = if $impure { ["--impure"] } else { [] }
+
+  nix build --no-link --print-out-paths ...$nix_args ...$targets | cachix push vbuuu
 }

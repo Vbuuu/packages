@@ -24,4 +24,4 @@ let
     op { } [ ];
 
 in
-flattenPkgs nested
+lib.filterAttrs (_: pkg: lib.meta.availableOn pkgs.stdenv.hostPlatform pkg) (flattenPkgs nested)
