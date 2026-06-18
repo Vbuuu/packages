@@ -15,6 +15,12 @@
       let
         pkgs = import nixpkgs {
           inherit system;
+
+          config.allowUnfreePredicate =
+            pkg:
+            builtins.elem (nixpkgs.lib.getName pkg) [
+              "cheat-engine"
+            ];
         };
       in
       {
