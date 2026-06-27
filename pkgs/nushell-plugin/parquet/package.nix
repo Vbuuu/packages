@@ -12,7 +12,7 @@ rustPlatform.buildRustPackage rec {
     owner = "fdncred";
     repo = "nu_plugin_parquet";
     rev = "v0.22.0";
-    sha256 = "sha256-TFzYa4jMy664rW+FRKYAcKo+niJg0IcEEyinGrpXbBg=";
+    hash = "sha256-TFzYa4jMy664rW+FRKYAcKo+niJg0IcEEyinGrpXbBg=";
   };
 
   cargoLock = {

@@ -5,7 +5,7 @@ stdenvNoCC.mkDerivation {
 
   src = fetchurl {
     url = "https://probe.rs/files/69-probe-rs.rules";
-    sha256 = "sha256-yjxld5ebm2jpfyzkw+vngBfHu5Nfh2ioLUKQQDY4KYo=";
+    hash = "sha256-yjxld5ebm2jpfyzkw+vngBfHu5Nfh2ioLUKQQDY4KYo=";
   };
 
   dontUnpack = true;

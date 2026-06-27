@@ -17,7 +17,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   src = fetchurl {
     url = "https://cheatengine.org/download/CheatEngineLinux77.zip";
-    sha256 = "sha256-Lv/pYIAVVnNyzMle0FZWT/7tfYKQI45jeBFbLiEd164=";
+    hash = "sha256-Lv/pYIAVVnNyzMle0FZWT/7tfYKQI45jeBFbLiEd164=";
   };
 
   sourceRoot = "CheatEngineLinux77";
