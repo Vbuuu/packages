@@ -4,6 +4,16 @@
     flake-utils.url = "github:numtide/flake-utils";
   };
 
+  nixConfig = {
+    extra-substituters = [
+      "https://vbuuu.cachix.org"
+    ];
+
+    extra-trusted-public-keys = [
+      "vbuuu.cachix.org-1:jf97r2/bHQvuifjPM0YmelhTXrEvLC0UpS9+jPuwCnw="
+    ];
+  };
+
   outputs =
     {
       nixpkgs,
