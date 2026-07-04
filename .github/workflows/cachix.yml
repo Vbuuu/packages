@@ -1,0 +1,36 @@
+name: Build arm cache
+
+on:
+  push:
+    branches:
+      - dev
+
+concurrency:
+  group: build
+  cancel-in-progress: true
+
+jobs:
+  build-and-upload:
+    runs-on: ubuntu-26.04-arm
+    steps:
+      - name: Checkout packages
+        uses: actions/checkout@v6
+
+      - name: Install Nix
+        uses: cachix/install-nix-action@v31.10.6
+
+      - name: Install Nushell
+        uses: hustcer/setup-nu@v3.25
+
+      - uses: DeterminateSystems/magic-nix-cache-action@main
+        with:
+          diagnostic-endpoint: ""
+
+      - name: Setup Cachix
+        uses: cachix/cachix-action@v17
+        with:
+          name: vbuuu
+          authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
+
+      - name: Build and push to Cachix
+        run: nu push-cachix.nu --arm64
