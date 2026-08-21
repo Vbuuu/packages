@@ -13,14 +13,14 @@
 }:
 stdenv.mkDerivation (finalAttrs: {
   pname = "cheat-engine";
-  version = "7.7";
+  version = "7.7.1";
 
   src = fetchurl {
-    url = "https://cheatengine.org/download/CheatEngineLinux77.zip";
-    hash = "sha256-Lv/pYIAVVnNyzMle0FZWT/7tfYKQI45jeBFbLiEd164=";
+    url = "https://cheatengine.org/download/CheatEngineLinux771.zip";
+    hash = "sha256-D7DZBDroVqzeA7W4caLzYn689nSurNBF+G1W2RoH8Xc=";
   };
 
-  sourceRoot = "CheatEngineLinux77";
+  sourceRoot = ".";
 
   nativeBuildInputs = [
     unzip
