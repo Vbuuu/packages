@@ -1,0 +1,64 @@
+diff --git a/extra/qt5ct/colors/Adwaita-AMOLED.conf b/extra/qt5ct/colors/Adwaita-AMOLED.conf
+index 0bc833f..b41d518 100644
+--- a/extra/qt5ct/colors/Adwaita-AMOLED.conf
++++ b/extra/qt5ct/colors/Adwaita-AMOLED.conf
+@@ -1,4 +1,4 @@
+ [ColorScheme]
+-active_colors=#ffffffff, #ff161616, #ff2a2a2a, #ff1e1e1e, #ff050505, #ff0f0f0f, #ffffffff, #ffffffff, #ffffffff, #ff0a0a0a, #ff000000, #ff2a2a2a, #ff387af2, #ffffffff, #ff387af2, #ff4a8cf5, #ff0f0f0f, #ffffffff, #ff141414, #ffffffff, #80ffffff
+-disabled_colors=#ff606060, #ff0e0e0e, #ff1e1e1e, #ff141414, #ff030303, #ff080808, #ff606060, #ffffffff, #ff606060, #ff060606, #ff000000, #ff1a1a1a, #ff1e3f7a, #ff909090, #ff1e3f7a, #ff243f7a, #ff0a0a0a, #ffffffff, #ff141414, #ffffffff, #80606060
+-inactive_colors=#ffc0c0c0, #ff141414, #ff222222, #ff1a1a1a, #ff050505, #ff0d0d0d, #ffc0c0c0, #ffffffff, #ffc0c0c0, #ff080808, #ff000000, #ff1e1e1e, #ff2d6be0, #ffe0e0e0, #ff387af2, #ff4a8cf5, #ff0d0d0d, #ffffffff, #ff141414, #ffffffff, #80b0b0b0
++active_colors=#ffe5e5d0, #ff1a1a1a, #ff2a2a2a, #ff1a1a1a, #ff050707, #ff0a0a0a, #ffe5e5d0, #ffe5e5d0, #ffe5e5d0, #ff050707, #ff050707, #ff2a2a2a, #ffde4b00, #ff050707, #ffde4b00, #fffc9900, #ff141414, #ffe5e5d0, #ff141414, #ffe5e5d0, #80e5e5d0
++disabled_colors=#ff7a7a6e, #ff0a0a0a, #ff1e1e1e, #ff141414, #ff050707, #ff080808, #ff7a7a6e, #ffafab91, #ff7a7a6e, #ff050707, #ff050707, #ff1a1a1a, #ff6e2500, #ff7a7a6e, #ff7a3a00, #ff8a5a00, #ff080808, #ff7a7a6e, #ff0a0a0a, #ffafab91, #807a7a6e
++inactive_colors=#ffafab91, #ff141414, #ff2a2a2a, #ff1a1a1a, #ff050707, #ff0a0a0a, #ffafab91, #ffe5e5d0, #ffafab91, #ff050707, #ff050707, #ff2a2a2a, #ffb03a00, #ff050707, #ffde4b00, #fffc9900, #ff0d0d0d, #ffe5e5d0, #ff141414, #ffe5e5d0, #80afab91
+diff --git a/extra/qt5ct/qss/fusion-simple-scrollbar.qss b/extra/qt5ct/qss/fusion-simple-scrollbar.qss
+index 1099cfc..87b55e2 100644
+--- a/extra/qt5ct/qss/fusion-simple-scrollbar.qss
++++ b/extra/qt5ct/qss/fusion-simple-scrollbar.qss
+@@ -8,12 +8,12 @@ QScrollBar::handle {
+   margin: 1px;
+   border-radius: 3px;
+   border: 0;
+-  background: rgba(127, 127, 127, .5);
++  background: #2a2a2a;
+   min-height: 20px;
+   min-width: 20px;
+ }
+-QScrollBar::handle:hover { background: rgba(127, 127, 127, 1); }
+-QScrollBar::handle:pressed { background: palette(highlight); }
++QScrollBar::handle:hover { background: #e5e5d0; }
++QScrollBar::handle:pressed { background: #2a2a2a; }
+ 
+ QScrollBar::add-line , QScrollBar::sub-line {
+   height: 0;
+diff --git a/extra/qt6ct/colors/Adwaita-AMOLED.conf b/extra/qt6ct/colors/Adwaita-AMOLED.conf
+index 0bc833f..b41d518 100644
+--- a/extra/qt6ct/colors/Adwaita-AMOLED.conf
++++ b/extra/qt6ct/colors/Adwaita-AMOLED.conf
+@@ -1,4 +1,4 @@
+ [ColorScheme]
+-active_colors=#ffffffff, #ff161616, #ff2a2a2a, #ff1e1e1e, #ff050505, #ff0f0f0f, #ffffffff, #ffffffff, #ffffffff, #ff0a0a0a, #ff000000, #ff2a2a2a, #ff387af2, #ffffffff, #ff387af2, #ff4a8cf5, #ff0f0f0f, #ffffffff, #ff141414, #ffffffff, #80ffffff
+-disabled_colors=#ff606060, #ff0e0e0e, #ff1e1e1e, #ff141414, #ff030303, #ff080808, #ff606060, #ffffffff, #ff606060, #ff060606, #ff000000, #ff1a1a1a, #ff1e3f7a, #ff909090, #ff1e3f7a, #ff243f7a, #ff0a0a0a, #ffffffff, #ff141414, #ffffffff, #80606060
+-inactive_colors=#ffc0c0c0, #ff141414, #ff222222, #ff1a1a1a, #ff050505, #ff0d0d0d, #ffc0c0c0, #ffffffff, #ffc0c0c0, #ff080808, #ff000000, #ff1e1e1e, #ff2d6be0, #ffe0e0e0, #ff387af2, #ff4a8cf5, #ff0d0d0d, #ffffffff, #ff141414, #ffffffff, #80b0b0b0
++active_colors=#ffe5e5d0, #ff1a1a1a, #ff2a2a2a, #ff1a1a1a, #ff050707, #ff0a0a0a, #ffe5e5d0, #ffe5e5d0, #ffe5e5d0, #ff050707, #ff050707, #ff2a2a2a, #ffde4b00, #ff050707, #ffde4b00, #fffc9900, #ff141414, #ffe5e5d0, #ff141414, #ffe5e5d0, #80e5e5d0
++disabled_colors=#ff7a7a6e, #ff0a0a0a, #ff1e1e1e, #ff141414, #ff050707, #ff080808, #ff7a7a6e, #ffafab91, #ff7a7a6e, #ff050707, #ff050707, #ff1a1a1a, #ff6e2500, #ff7a7a6e, #ff7a3a00, #ff8a5a00, #ff080808, #ff7a7a6e, #ff0a0a0a, #ffafab91, #807a7a6e
++inactive_colors=#ffafab91, #ff141414, #ff2a2a2a, #ff1a1a1a, #ff050707, #ff0a0a0a, #ffafab91, #ffe5e5d0, #ffafab91, #ff050707, #ff050707, #ff2a2a2a, #ffb03a00, #ff050707, #ffde4b00, #fffc9900, #ff0d0d0d, #ffe5e5d0, #ff141414, #ffe5e5d0, #80afab91
+diff --git a/extra/qt6ct/qss/fusion-simple-scrollbar.qss b/extra/qt6ct/qss/fusion-simple-scrollbar.qss
+index 1099cfc..87b55e2 100644
+--- a/extra/qt6ct/qss/fusion-simple-scrollbar.qss
++++ b/extra/qt6ct/qss/fusion-simple-scrollbar.qss
+@@ -8,12 +8,12 @@ QScrollBar::handle {
+   margin: 1px;
+   border-radius: 3px;
+   border: 0;
+-  background: rgba(127, 127, 127, .5);
++  background: #2a2a2a;
+   min-height: 20px;
+   min-width: 20px;
+ }
+-QScrollBar::handle:hover { background: rgba(127, 127, 127, 1); }
+-QScrollBar::handle:pressed { background: palette(highlight); }
++QScrollBar::handle:hover { background: #e5e5d0; }
++QScrollBar::handle:pressed { background: #2a2a2a; }
+ 
+ QScrollBar::add-line , QScrollBar::sub-line {
+   height: 0;
